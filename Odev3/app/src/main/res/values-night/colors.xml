@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="malefemale">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="anarenk">#222426</color>
+    <color name="acikYesil">#A7F205</color>
+    <color name="yesil">#84BF04</color>
+    <color name="kapaliYesil">#A7F205</color>
+    <color name="karanlikYesil">#A7F205</color>
+
+</resources>

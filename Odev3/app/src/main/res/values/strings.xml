@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Odev3</string>
+    <string name="male">Male</string>
+    <string name="toolbar">BMI Calculater</string>
+    <string name="women">Women</string>
+    <string name="enterweight">Please enter your weight !!!</string>
+    <string name="enterheight">Please enter your height !!!</string>
+    <string name="calculate">Calculate</string>
+    <string name="motivationtext">Health is not just about numbers, but numbers can show the right path.</string>
+    <string name="Bmıresult">Your BMI is 26.0 kg/m^2</string>
+    <string name="loseweight">to lose weight</string>
+    <string name="gainweight">to gain weight</string>
+</resources>

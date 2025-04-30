@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Odev3</string>
+    <string name="male">Erkek</string>
+    <string name="toolbar">Vücut Kitle İndeksi Hesaplayıcı</string>
+    <string name="women">Kadın</string>
+    <string name="enterweight">Lütfen kilonuzu girin !!!</string>
+    <string name="enterheight">Lütfen boyunuzu girin !!!</string>
+    <string name="calculate">Hesapla</string>
+    <string name="motivationtext">Sağlık sadece rakamlardan ibaret değildir, ancak rakamlar doğru yolu gösterebilir.</string>
+    <string name="Bmıresult">Vücut Kitle İndeksiniz 26.0 kg/m^2</string>
+    <string name="loseweight">kilo vermek için</string>
+    <string name="gainweight">kilo almak için</string>
+
+</resources>
