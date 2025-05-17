@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/açıkgri"
+    tools:context=".ui.fragment.AnasayfaFragment">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbaranasayfa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/turkuaz"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Mobil ▼"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="22dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarkisibilgi"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbaranasayfa" />
+
+    <ImageView
+        android:id="@+id/imageViewPersonIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/account_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarkisibilgi"
+        app:layout_constraintStart_toStartOf="@+id/toolbarkisibilgi"
+        app:layout_constraintTop_toBottomOf="@+id/toolbaranasayfa" />
+
+    <TextView
+        android:id="@+id/textViewPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPersonNumber"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPersonIcon"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarkisibilgi" />
+
+    <TextView
+        android:id="@+id/textViewPersonNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/koyugri"
+        app:layout_constraintBottom_toTopOf="@+id/toolbarkisibilgi"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPersonIcon"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPersonName" />
+
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/bell"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarkisibilgi"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarkisibilgi"
+        app:layout_constraintTop_toBottomOf="@+id/toolbaranasayfa" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEtkinlikler"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="481dp"
+        android:background="@color/açıkgri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarkisibilgi" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="243dp"
+        android:text="Kullanım Detayları"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewEtkinlikler" />
+
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/buttonInternet"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="132dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:elevation="1000dp"
+            android:text="İnternet"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonDakika"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="132dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:elevation="1000dp"
+            android:text="Dakika"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonSMS"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="132dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:elevation="1000dp"
+            android:text="SMS"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
