@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.omergezici.yemeklerbitirmeprojesi.ui.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/detayaGecis"
+            app:destination="@id/urunDetayFragment" />
+        <action
+            android:id="@+id/sepeteGecis"
+            app:destination="@id/sepetimFragment" />
+        <action
+            android:id="@+id/anasayfaGecis"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunDetayFragment"
+        android:name="com.omergezici.yemeklerbitirmeprojesi.ui.fragment.UrunDetayFragment"
+        android:label="fragment_urun_detay"
+        tools:layout="@layout/fragment_urun_detay" >
+        <argument
+            android:name="Yemek"
+            app:argType="com.omergezici.yemeklerbitirmeprojesi.data.entity.YemeklerAnasayfa" />
+        <action
+            android:id="@+id/anasayfayaGecis"
+            app:destination="@id/anasayfaFragment" />
+        <action
+            android:id="@+id/urundensepete"
+            app:destination="@id/sepetimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetimFragment"
+        android:name="com.omergezici.yemeklerbitirmeprojesi.ui.fragment.SepetimFragment"
+        android:label="fragment_sepetim"
+        tools:layout="@layout/fragment_sepetim" >
+        <argument
+            android:name="Yemek"
+            app:argType="com.omergezici.yemeklerbitirmeprojesi.data.entity.YemeklerSepet" />
+    </fragment>
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="anayesil">#4CAF50</color>
+    <color name="acikyesil">#A5D6A7	</color>
+    <color name="koyuyesil">#2E7D32	</color>
+    <color name="naneyesil">#B2DFDB	</color>
+    <color name="notrgri">#F5F5F5</color>
+    <color name="koyugri">#424242</color>
+</resources>
